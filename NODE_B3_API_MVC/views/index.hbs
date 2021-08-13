@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <table border="1">
+    <tr>
+      <th>Id</th>
+      <th>Student Name</th>
+      <th>Create Date</th>
+      <th>Update Date</th>
+      <th>Action</th>
+    </tr>
+    {{#each data}}
+    <tr>
+      <td>{{Id}}</td>
+      <td>{{student_name}}</td>
+      <td>{{create_date}}</td>
+      <td>{{update_date}}</td>
+      <td><input type="submit" value="Update"></td>
+    </tr>
+    {{/each}}
+
+  </table>
+
+  <br />
+  <form>
+    <h1>Thông tin lớp tạo gần nhất</h1>
+    <label>Class Name</label>
+    <input type="text">
+     <label>Class Code</label>
+    <input type="text">
+    ...
+  </form>
+  
+  {{!--
+  BTVN :
+  //Tao một bang class : Id,Class Name,Class Code,Number Student,Create_Date
+  //Tạo một view /class :
+  1: Show lên tất cả trong dạng bảng
+  2: Tạo một combobox có tất cá lớp học
+  3: Tạo một form hiển thị lên chi tiết lớp học gần nhất
+  4: Tạo một chức năng trên bảng update lên Class Name và Class Code  bằng jquery và ajax 
+   --}}
+
+</body>
+
+</html><code class="language-javascript"></code>
